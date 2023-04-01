@@ -1,6 +1,5 @@
 @import url('https://raw.githubusercontent.com/discord-extensions/modern-indicators/main/clients/bd/modern-indicators.theme.css');
 @import url('https://raw.githubusercontent.com/kckarnige/server-scroll/main/base.css');
-@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 
 :root {
     --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
