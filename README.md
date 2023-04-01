@@ -1,2 +1,2 @@
-# essential-ui
-A simple Discord theme.
+# Essential UI
+### A simple `WiP` Discord theme.

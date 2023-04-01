@@ -1,0 +1,89 @@
+@import url('https://raw.githubusercontent.com/discord-extensions/modern-indicators/main/clients/bd/modern-indicators.theme.css');
+@import url('https://raw.githubusercontent.com/kckarnige/server-scroll/main/base.css');
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+
+:root {
+    --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+  
+    --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+  
+    --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+  
+    --rs-online-color: #43b581; /* Colour for online status */
+    --rs-idle-color: #faa61a; /* Colour for idle status */
+    --rs-dnd-color: #f04747; /* Colour for dnd status */
+    --rs-offline-color: #636b75; /* Colour for offline status */
+    --rs-streaming-color: #643da7; /* Colour for streaming status */
+    --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+  
+    --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  }
+  
+.side-1lrxIh {
+    /* ---- For the settings page -- */
+    --indicator-border-info: 2px solid;
+
+    --indicator-selected: 235, calc(var(--saturation-factor, 1) * 86%), 65%;
+    --indicator-selected-border: hsl(var(--indicator-selected));
+    --indicator-selected-background: hsla(var(--indicator-selected), 0.1);
+    --indicator-selected-text: 235, calc(var(--saturation-factor, 1) * 86.2%), 88.6%;
+
+    --indicator-unread: 255, 255, 255;
+    --indicator-unread-border: rgba(var(--indicator-unread), 0.6);
+}
+
+[aria-controls="discord-nitro-tab"] [class*="background-"] {
+    display: none;
+}
+[aria-selected="false"] div[class*="premiumLabel-"] > svg > path {
+    fill: var(--brand-500);
+}
+
+.side-1lrxIh .item-2GWPIy {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 2px;
+    border-radius: 0;
+}
+
+.side-1lrxIh .item-2GWPIy:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-left: var(--indicator-border-info) var(--indicator-unread-border);
+}
+
+.side-1lrxIh .item-2GWPIy.selected-1sf9UK:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-left: var(--indicator-border-info) var(--indicator-selected-border) !important;
+}
+
+.side-1lrxIh .item-2GWPIy.selected-1sf9UK {
+    background: var(--indicator-selected-background) !important;
+}
+
+[aria-controls="discord-nitro-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
+[data-item-id="theme-toggler"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
+[aria-controls="bdcompat-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
+[aria-controls="plugins-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
+[aria-controls="subscriptions-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
+[aria-controls="shsnazzy-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3 {
+    background: var(--indicator-selected-border) !important;
+    color: var(--interactive-active) !important;
+}
+
+::selection {
+    background-color: hsla(var(--indicator-selected), 0.35) !important;
+    color: hsl(var(--indicator-selected-text)) !important;
+}
