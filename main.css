@@ -1,36 +1,60 @@
 @import url('https://raw.githubusercontent.com/discord-extensions/modern-indicators/main/clients/bd/modern-indicators.theme.css');
 @import url('https://raw.githubusercontent.com/kckarnige/server-scroll/main/base.css');
 
+/* discord-extensions/modern-indicators @ Github */
+@import url('https://discord-extensions.github.io/modern-indicators/src/source.css');
+
+/* || Accent Colors
+ * Accent colors use HSL to remain compatible with Discord's built in saturation accessibility feature.
+ * To the bigbrains out there, I know this is unnecessary. This is just how I prefer to do things.
+ */
+.theme-light {
+    --indicator-unread: 0, calc(var(--mod-saturation-factor, 1) * 0%), 0%;
+    --indicator-selected: 235, calc(var(--mod-saturation-factor, 1) * 86%), 65%;
+    --indicator-connected: 139, calc(var(--mod-saturation-factor, 1) * 47.6%), 48.6%;
+    --indicator-hovered: hsla(var(--indicator-unread), 0.08);
+    --text-active: black;
+}
+.theme-dark {
+    --indicator-unread: 0, calc(var(--mod-saturation-factor, 1) * 0%), 100%;
+    --indicator-selected: 235, calc(var(--mod-saturation-factor, 1) * 86%), 65%;
+    --indicator-connected: 139, calc(var(--mod-saturation-factor, 1) * 86%), 65%;
+    --indicator-hovered: hsla(var(--indicator-unread), 0.045);
+    --text-active: white;
+}
+
+/* || Main Customization */
 :root {
-    --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
-    --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
-    --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
-  
-    --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-    --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
-    --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
-  
-    --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-  
-    --rs-online-color: #43b581; /* Colour for online status */
-    --rs-idle-color: #faa61a; /* Colour for idle status */
-    --rs-dnd-color: #f04747; /* Colour for dnd status */
-    --rs-offline-color: #636b75; /* Colour for offline status */
-    --rs-streaming-color: #643da7; /* Colour for streaming status */
-    --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
-    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-  
-    --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-  }
+    --mod-saturation-factor: .7;
+    --indicator-border-size: 2px;
+    --indicator-border-style: solid;
+    --indicator-rounding: 0;
+
+    /* || Advanced Coloring */
+    --item-selected-icon: hsl(var(--indicator-selected));
+    --item-selected-indicator: hsl(var(--indicator-selected));
+    --item-selected-background: hsla(var(--indicator-selected), 0.1);
+    --item-selected-background-hover: hsla(var(--indicator-selected), 0.2);
+
+    --item-connected-icon: hsl(var(--indicator-connected));
+    --item-connected-indicator: hsl(var(--indicator-connected));
+    --item-connected-background: hsl(var(--indicator-connected), 0.1);
+    --item-connected-background-hover: hsl(var(--indicator-connected), 0.2);
+
+    --item-unread-icon: hsl(var(--indicator-unread));
+    --item-unread-indicator: hsl(var(--indicator-unread), 0.5);
+    --item-unread-background: hsl(var(--indicator-unread), 0.025);
+    --item-unread-background-hover: hsl(var(--indicator-unread), 0.045);
+}
   
 .side-1lrxIh {
     /* ---- For the settings page -- */
     --indicator-border-info: 2px solid;
 
-    --indicator-selected: 235, calc(var(--saturation-factor, 1) * 86%), 65%;
+    --indicator-selected: 235, calc(var(--mod-saturation-factor, 1) * 85.6%), 64.7%;
     --indicator-selected-border: hsl(var(--indicator-selected));
     --indicator-selected-background: hsla(var(--indicator-selected), 0.1);
-    --indicator-selected-text: 235, calc(var(--saturation-factor, 1) * 86.2%), 88.6%;
+    --indicator-selected-text: 235, calc(var(--mod-saturation-factor, 1) * 86.2%), 88.6%;
 
     --indicator-unread: 255, 255, 255;
     --indicator-unread-border: rgba(var(--indicator-unread), 0.6);
@@ -73,11 +97,10 @@
 }
 
 [aria-controls="discord-nitro-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
-[data-item-id="theme-toggler"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
-[aria-controls="bdcompat-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
-[aria-controls="plugins-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
 [aria-controls="subscriptions-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
-[aria-controls="shsnazzy-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3 {
+[aria-controls="shsnazzy-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
+[aria-controls="vencordplugins-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
+[aria-controls="vencordthemes-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3 {
     background: var(--indicator-selected-border) !important;
     color: var(--interactive-active) !important;
 }
@@ -85,4 +108,62 @@
 ::selection {
     background-color: hsla(var(--indicator-selected), 0.35) !important;
     color: hsl(var(--indicator-selected-text)) !important;
+}
+
+#app-mount .info-3pQQBb .line-18uChy:last-child:after {
+    display: none;
+}
+:root {
+    --brand-100: hsl(var(--brand-100-hsl)/1);
+    --brand-100-hsl: 240 calc(var(--mod-saturation-factor, 1)*77.8%) 98.2%;
+    --brand-130: hsl(var(--brand-130-hsl)/1);
+    --brand-130-hsl: 236 calc(var(--mod-saturation-factor, 1)*87.5%) 96.9%;
+    --brand-160: hsl(var(--brand-160-hsl)/1);
+    --brand-160-hsl: 235 calc(var(--mod-saturation-factor, 1)*84.6%) 94.9%;
+    --brand-200: hsl(var(--brand-200-hsl)/1);
+    --brand-200-hsl: 236 calc(var(--mod-saturation-factor, 1)*83.3%) 92.9%;
+    --brand-230: hsl(var(--brand-230-hsl)/1);
+    --brand-230-hsl: 236 calc(var(--mod-saturation-factor, 1)*87%) 91%;
+    --brand-260: hsl(var(--brand-260-hsl)/1);
+    --brand-260-hsl: 235 calc(var(--mod-saturation-factor, 1)*86.2%) 88.6%;
+    --brand-300: hsl(var(--brand-300-hsl)/1);
+    --brand-300-hsl: 235 calc(var(--mod-saturation-factor, 1)*86.1%) 85.9%;
+    --brand-330: hsl(var(--brand-330-hsl)/1);
+    --brand-330-hsl: 235 calc(var(--mod-saturation-factor, 1)*85.1%) 81.6%;
+    --brand-345: hsl(var(--brand-345-hsl)/1);
+    --brand-345-hsl: 235 calc(var(--mod-saturation-factor, 1)*85.2%) 78.8%;
+    --brand-360: hsl(var(--brand-360-hsl)/1);
+    --brand-360-hsl: 235 calc(var(--mod-saturation-factor, 1)*86.1%) 77.5%;
+    --brand-400: hsl(var(--brand-400-hsl)/1);
+    --brand-400-hsl: 235 calc(var(--mod-saturation-factor, 1)*86.1%) 71.8%;
+    --brand-430: hsl(var(--brand-430-hsl)/1);
+    --brand-430-hsl: 235 calc(var(--mod-saturation-factor, 1)*85.7%) 69.8%;
+    --brand-460: hsl(var(--brand-460-hsl)/1);
+    --brand-460-hsl: 235 calc(var(--mod-saturation-factor, 1)*85.5%) 67.5%;
+    --brand-500: hsl(var(--brand-500-hsl)/1);
+    --brand-500-hsl: 235 calc(var(--mod-saturation-factor, 1)*85.6%) 64.7%;
+    --brand-530: hsl(var(--brand-530-hsl)/1);
+    --brand-530-hsl: 235 calc(var(--mod-saturation-factor, 1)*66.7%) 58.8%;
+    --brand-560: hsl(var(--brand-560-hsl)/1);
+    --brand-560-hsl: 235 calc(var(--mod-saturation-factor, 1)*51.4%) 52.4%;
+    --brand-600: hsl(var(--brand-600-hsl)/1);
+    --brand-600-hsl: 235 calc(var(--mod-saturation-factor, 1)*46.7%) 44.1%;
+    --brand-630: hsl(var(--brand-630-hsl)/1);
+    --brand-630-hsl: 235 calc(var(--mod-saturation-factor, 1)*46.7%) 38.2%;
+    --brand-660: hsl(var(--brand-660-hsl)/1);
+    --brand-660-hsl: 235 calc(var(--mod-saturation-factor, 1)*47.1%) 33.3%;
+    --brand-700: hsl(var(--brand-700-hsl)/1);
+    --brand-700-hsl: 235 calc(var(--mod-saturation-factor, 1)*47%) 25.9%;
+    --brand-730: hsl(var(--brand-730-hsl)/1);
+    --brand-730-hsl: 235 calc(var(--mod-saturation-factor, 1)*46.8%) 24.3%;
+    --brand-760: hsl(var(--brand-760-hsl)/1);
+    --brand-760-hsl: 234 calc(var(--mod-saturation-factor, 1)*46.9%) 22.2%;
+    --brand-800: hsl(var(--brand-800-hsl)/1);
+    --brand-800-hsl: 235 calc(var(--mod-saturation-factor, 1)*47.5%) 19.4%;
+    --brand-830: hsl(var(--brand-830-hsl)/1);
+    --brand-830-hsl: 235 calc(var(--mod-saturation-factor, 1)*47.4%) 14.9%;
+    --brand-860: hsl(var(--brand-860-hsl)/1);
+    --brand-860-hsl: 235 calc(var(--mod-saturation-factor, 1)*46.9%) 9.6%;
+    --brand-900: hsl(var(--brand-900-hsl)/1);
+    --brand-900-hsl: 233 calc(var(--mod-saturation-factor, 1)*50%) 3.1%;
 }
