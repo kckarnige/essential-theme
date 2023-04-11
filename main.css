@@ -1,13 +1,13 @@
 @import url('https://raw.githubusercontent.com/discord-extensions/modern-indicators/main/clients/bd/modern-indicators.theme.css');
 @import url('https://raw.githubusercontent.com/kckarnige/server-scroll/main/base.css');
-
-/* discord-extensions/modern-indicators @ Github */
+@import url('https://martinz64.github.io/remove-nitro/better_sessions.css');
+@import url('https://martinz64.github.io/remove-nitro/remove_boosting.css');
+@import url('https://martinz64.github.io/remove-nitro/remove_profile_colors.css');
+@import url('https://martinz64.github.io/remove-nitro/remove_emoji_upsell.css');
+@import url('https://martinz64.github.io/remove-nitro/remove_avatar_decoration.css');
+@import url('https://martinz64.github.io/remove-nitro/remove_super_reactions.css');
 @import url('https://discord-extensions.github.io/modern-indicators/src/source.css');
 
-/* || Accent Colors
- * Accent colors use HSL to remain compatible with Discord's built in saturation accessibility feature.
- * To the bigbrains out there, I know this is unnecessary. This is just how I prefer to do things.
- */
 .theme-light {
     --indicator-unread: 0, calc(var(--mod-saturation-factor, 1) * 0%), 0%;
     --indicator-selected: var(--mod-hue-factor), calc(var(--mod-saturation-factor, 1) * 86%), 65%;
@@ -23,13 +23,11 @@
     --text-active: white;
 }
 
-/* || Main Customization */
 :root {
     --indicator-border-size: 2px;
     --indicator-border-style: solid;
     --indicator-rounding: 0;
 
-    /* || Advanced Coloring */
     --item-selected-icon: hsl(var(--indicator-selected));
     --item-selected-indicator: hsl(var(--indicator-selected));
     --item-selected-background: hsla(var(--indicator-selected), 0.1);
@@ -111,6 +109,16 @@
 
 #app-mount .info-3pQQBb .line-18uChy:last-child:after {
     display: none;
+}
+
+button[aria-label="Send a gift"],
+.containerExpanded-3MGTRr,
+.optionBox-1b4n4P:nth-child(2),
+a[href='/store'],
+[class*='tryItOutSection-'],
+[class*='privateChannelsHeaderContainer-'],
+none {
+    display: none !important;
 }
 :root {
     --brand-100: hsl(var(--brand-100-hsl)/1);
