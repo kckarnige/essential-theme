@@ -106,7 +106,9 @@
     background-color: hsla(var(--indicator-selected), 0.35) !important;
     color: hsl(var(--indicator-selected-text)) !important;
 }
-
+[aria-label="Add Super Reaction"],
+#message-actions-add-reaction-1,
+[class*="userPopoutInner-"] > [class*="wrapper-"] > [class*="banner-"],
 #app-mount .info-3pQQBb .line-18uChy:last-child:after {
     display: none;
 }
@@ -120,6 +122,7 @@ a[href='/store'],
 none {
     display: none !important;
 }
+
 :root {
     --brand-100: hsl(var(--brand-100-hsl)/1);
     --brand-100-hsl: var(--mod-hue-factor) calc(var(--mod-saturation-factor, 1)*77.8%) 98.2%;
