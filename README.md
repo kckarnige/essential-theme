@@ -1,4 +1,4 @@
-# Essential UI
+# Essential
 ### A simple `WiP` Discord theme.
 
 #### *[discord-extensions/modern-indicators](https://github.com/discord-extensions/modern-indicators)*
