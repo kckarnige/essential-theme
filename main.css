@@ -1,5 +1,6 @@
 @import url('https://raw.githubusercontent.com/discord-extensions/modern-indicators/main/clients/bd/modern-indicators.theme.css');
 @import url('https://raw.githubusercontent.com/kckarnige/server-scroll/main/base.css');
+@import url("https://kckarnige.is-a.dev/femboi_owo/discord-font.css");
 @import url('https://martinz64.github.io/remove-nitro/better_sessions.css');
 @import url('https://martinz64.github.io/remove-nitro/remove_boosting.css');
 @import url('https://martinz64.github.io/remove-nitro/remove_profile_colors.css');
@@ -121,6 +122,33 @@ a[href='/store'],
 [class*='privateChannelsHeaderContainer-'],
 none {
     display: none !important;
+}
+nav.titlebar div#window-title { /* ArmCord Compatible?! */
+    --wordmarkTransform: translateY(-35%);
+}
+
+[class*="wordmark-"] {
+    --wordmarkTransform: translateY(8%);
+}
+
+nav.titlebar div#window-title, [class*="wordmark-"] svg {
+    width: 0px;
+    content: none;
+}
+
+nav.titlebar div#window-title::after, [class*="wordmark-"]::after {
+    position: absolute;
+    font-family: "Discordinated";
+    content: var(--wordmark-text);
+    top: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--wordmark-text-color);
+    height: 19px;
+    width: 235px;
+    transform: var(--wordmarkTransform);
+    line-height: 20px;
+    display: block;
 }
 
 :root {
