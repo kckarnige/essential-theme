@@ -3,4 +3,6 @@
 :root {
     --mod-saturation-factor: 0.7; /* Default is .7 */
     --mod-hue-factor: 230; /* Default hue is 230 */
+    --wordmark-text-color: #72767d;
+    --wordmark-text: "Discord";
 }
