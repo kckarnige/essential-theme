@@ -1,7 +1,7 @@
 # Essential
 ### A simple `WiP` Discord theme.
 
-> For now, put the contents of "[theme.css](https://raw.githubusercontent.com/kckarnige/essential-ui/main/main.css)" in your Quick CSS
+> *For now, put the contents of "[theme.css](https://raw.githubusercontent.com/kckarnige/essential-ui/main/main.css)" in your Quick CSS*
 
 #### *[discord-extensions/modern-indicators](https://github.com/discord-extensions/modern-indicators)*
 
