@@ -123,12 +123,12 @@ a[href='/store'],
 none {
     display: none !important;
 }
-nav.titlebar div#window-title { /* ArmCord Compatible?! */
+[armcord-platform="win32"] nav.titlebar div#window-title { /* ArmCord Compatible?! */
     --wordmarkTransform: translateY(-38%);
 }
 
 .platform-win [class*="wordmark-"] {
-    --wordmarkTransform: translateY(18%);
+    --wordmarkTransform: translateY(14%);
 }
 
 .platform-win [class*="titleBar-"] {
@@ -138,15 +138,25 @@ nav.titlebar div#window-title { /* ArmCord Compatible?! */
 .platform-win [class*="winButton"] {
     position: relative;
     height: 30px;
-    width: 40px;
+    width: 45px;
 }
 
-nav.titlebar div#window-title, .platform-win [class*="wordmark-"] svg {
+[armcord-platform="win32"] nav.titlebar #window-controls-container #minimize,
+[armcord-platform="win32"] nav.titlebar #window-controls-container #maximize,
+[armcord-platform="win32"] nav.titlebar #window-controls-container #quit {
+    width: 45px;
+}
+
+[armcord-platform="win32"] nav.titlebar #window-controls-container {
+    width: 135px;
+}
+
+[armcord-platform="win32"] nav.titlebar div#window-title, .platform-win [class*="wordmark-"] svg {
     width: 0px;
     content: none;
 }
 
-nav.titlebar div#window-title::after, .platform-win [class*="wordmark-"]::after {
+[armcord-platform="win32"] nav.titlebar div#window-title::after, .platform-win [class*="wordmark-"]::after {
     position: absolute;
     font-family: "Discordinated";
     content: var(--wordmark-text);
