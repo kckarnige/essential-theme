@@ -124,19 +124,29 @@ none {
     display: none !important;
 }
 nav.titlebar div#window-title { /* ArmCord Compatible?! */
-    --wordmarkTransform: translateY(-35%);
+    --wordmarkTransform: translateY(-38%);
 }
 
-[class*="wordmark-"] {
-    --wordmarkTransform: translateY(8%);
+.platform-win [class*="wordmark-"] {
+    --wordmarkTransform: translateY(18%);
 }
 
-nav.titlebar div#window-title, [class*="wordmark-"] svg {
+.platform-win [class*="titleBar-"] {
+    height: 26px;
+}
+
+.platform-win [class*="winButton"] {
+    position: relative;
+    height: 30px;
+    width: 40px;
+}
+
+nav.titlebar div#window-title, .platform-win [class*="wordmark-"] svg {
     width: 0px;
     content: none;
 }
 
-nav.titlebar div#window-title::after, [class*="wordmark-"]::after {
+nav.titlebar div#window-title::after, .platform-win [class*="wordmark-"]::after {
     position: absolute;
     font-family: "Discordinated";
     content: var(--wordmark-text);
