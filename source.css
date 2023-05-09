@@ -135,10 +135,15 @@ none {
     height: 26px;
 }
 
-.platform-win [class*="winButton"] {
+.platform-win [class*="winButton-"] {
     position: relative;
     height: 30px;
     width: 45px;
+}
+
+.platform-win [class*="app-"] > [class*="container-"][class*="fixClipping-"] {
+    padding-top: 30px;
+    top: -30px;
 }
 
 [armcord-platform="win32"] nav.titlebar #window-controls-container #minimize,
