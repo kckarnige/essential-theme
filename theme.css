@@ -1,3 +1,11 @@
+/**
+ * @name Essential
+ * @version 1.0.0
+ * @description A simple Discord theme.
+ * @author KayoticCarnige
+ * @source https://github.com/kckarnige/essential-theme
+**/
+
 @import url("https://raw.githubusercontent.com/kckarnige/essential-theme/main/source.css");
 
 :root {
