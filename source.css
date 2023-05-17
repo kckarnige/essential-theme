@@ -95,10 +95,7 @@
 }
 
 [aria-controls="discord-nitro-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
-[aria-controls="subscriptions-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
-[aria-controls="shsnazzy-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
-[aria-controls="vencordplugins-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3,
-[aria-controls="vencordthemes-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3 {
+[aria-controls="subscriptions-tab"].item-2GWPIy.selected-1sf9UK.themed-qqoYp3 {
     background: var(--indicator-selected-border) !important;
     color: var(--interactive-active) !important;
 }
