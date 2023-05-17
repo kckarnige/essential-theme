@@ -1,5 +1,5 @@
 /**
- * @name Essential
+ * @name The Essentials
  * @author KayoticCarnige
  * @authorId 634168893644210186
  * @authorLink https://kckarnige.is-a.dev
@@ -9,7 +9,6 @@
  * @source https://github.com/kckarnige/essential-theme
  * @updateUrl https://raw.githubusercontent.com/kckarnige/essential-theme/main/essential.theme.css
 */
-
 @import url("https://raw.githubusercontent.com/kckarnige/essential-theme/main/source.css");
 
 :root {
