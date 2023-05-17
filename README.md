@@ -1,7 +1,7 @@
 # The Essentials
 ### A simple `WiP` Discord theme.
 
-> *This theme has been tested with [Vencord](https://github.com/Vendicated/Vencord) via Quick CSS*
+> *This theme has been tested with [Vencord](https://github.com/Vendicated/Vencord) via Quick CSS, and [ArmCord](https://github.com/ArmCord/ArmCord)'s new theme manager*
 
 > *For any other client mod user (including [Vencord](https://github.com/Vendicated/Vencord)), put the contents of "[the-essentials.theme.css](https://raw.githubusercontent.com/kckarnige/essential-theme/main/the-essentials.theme.css)" in your Quick CSS*
 
