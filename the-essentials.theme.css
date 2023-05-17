@@ -17,3 +17,7 @@
     --wordmark-text-color: #72767d;
     --wordmark-text: "Discord";
 }
+
+.titlebar {
+/* This is just for ArmCord's titlebar compatibility thing */
+}
