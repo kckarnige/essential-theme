@@ -7,9 +7,9 @@
  * @description A simple Discord theme.
  * @donate https://ko-fi.com/kckarnige
  * @source https://github.com/kckarnige/essential-theme
- * @updateUrl https://raw.githubusercontent.com/kckarnige/essential-theme/main/essential.theme.css
+ * @updateUrl https://raw.githack.com/kckarnige/essential-theme/main/essential.theme.css
 */
-@import url("https://raw.githubusercontent.com/kckarnige/essential-theme/main/source.css");
+@import url("https://raw.githack.com/kckarnige/essential-theme/main/source.css");
 
 :root {
     --mod-saturation-factor: 0.7; /* Default is .7 */
@@ -19,5 +19,5 @@
 }
 
 .titlebar {
-/* This is just for ArmCord's titlebar compatibility thing */
+/* This is just for ArmCord's titlebar compatibility check */
 }
