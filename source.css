@@ -65,6 +65,10 @@
     fill: var(--brand-500);
 }
 
+[class*="children-"] > [class*="titleWrapper-"] {
+    padding-left: 4px;
+}
+
 .side-1lrxIh .item-2GWPIy {
     padding-top: 6px;
     padding-bottom: 6px;
