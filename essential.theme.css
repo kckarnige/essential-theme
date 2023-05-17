@@ -1,10 +1,14 @@
 /**
  * @name Essential
+ * @author KayoticCarnige
+ * @authorId 634168893644210186
+ * @authorLink https://kckarnige.is-a.dev
  * @version 1.0.0
  * @description A simple Discord theme.
- * @author KayoticCarnige
+ * @donate https://ko-fi.com/kckarnige
  * @source https://github.com/kckarnige/essential-theme
-**/
+ * @updateUrl https://raw.githubusercontent.com/kckarnige/essential-theme/main/essential.theme.css
+*/
 
 @import url("https://raw.githubusercontent.com/kckarnige/essential-theme/main/source.css");
 
