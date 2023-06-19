@@ -3,7 +3,7 @@
 
 > *This theme has been tested with [Vencord](https://github.com/Vendicated/Vencord) via Quick CSS, and [ArmCord](https://github.com/ArmCord/ArmCord)'s new theme manager*
 
-> *For any other client mod user (including [Vencord](https://github.com/Vendicated/Vencord)), put the contents of "[the-essentials.theme.css](https://github.com/kckarnige/essential-theme/blob/main/the-essentials.theme.css)" in your Quick CSS*
+> *For any other client mod user (or if you want to be able to make quick edits), put the contents of "[the-essentials.theme.css](https://github.com/kckarnige/essential-theme/blob/main/the-essentials.theme.css)" in your Quick CSS*
 
 #### *[discord-extensions/modern-indicators](https://github.com/discord-extensions/modern-indicators)*
 
