@@ -10,3 +10,5 @@
 #### *[Znunu/Discord-Purge-Nitro](https://github.com/Znunu/Discord-Purge-Nitro)*
 
 #### *[Martinz64/remove-nitro](https://github.com/Martinz64/remove-nitro)*
+
+#### *[DaBluLite/css-snippets - BetterModals](https://github.com/DaBluLite/css-snippets/tree/master/BetterModals)*
