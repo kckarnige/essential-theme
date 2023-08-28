@@ -178,6 +178,16 @@ none {
     display: block;
 }
 
+[class*="userTag-"]:not([class*="nameTag-"]) [class*="userTagUsernameBase-"]:before,
+[class*="info-"][class*="nameTagSmall-"] [class*="discriminator-"]:before {
+    content: "@";
+}
+
+[class*="userTag-"]:not([class*="nameTag-"]) [class*="userTagUsernameBase-"],
+[class*="info-"][class*="nameTagSmall-"] [class*="discriminator-"] {
+    color: var(--text-muted);
+}
+
 :root {
     --brand-100: hsl(var(--brand-100-hsl)/1);
     --brand-100-hsl: var(--mod-hue-factor) calc(var(--mod-saturation-factor, 1)*77.8%) 98.2%;
