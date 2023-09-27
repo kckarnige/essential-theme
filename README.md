@@ -1,9 +1,9 @@
 # The Essentials
 ### A simple `WiP` Discord theme.
 
-> *This theme has been tested with [Vencord](https://github.com/Vendicated/Vencord) via Quick CSS, and [ArmCord](https://github.com/ArmCord/ArmCord)'s new theme manager*
+> *This theme has been tested with [ArmCord](https://github.com/ArmCord/ArmCord), [BetterDiscord](https://betterdiscord.app), and [Vesktop](https://github.com/Vencord/Vesktop/)*
 
-> *For any other client mod user (or if you want to be able to make quick edits), put the contents of "[the-essentials.theme.css](https://github.com/kckarnige/essential-theme/blob/main/the-essentials.theme.css)" in your Quick CSS*
+> *For any other client mod user, like Vencord web users (or if you want to be able to make quick edits), put the contents of "[the-essentials.theme.css](https://github.com/kckarnige/essential-theme/blob/main/the-essentials.theme.css)" in your Quick CSS*
 
 #### *[discord-extensions/modern-indicators](https://github.com/discord-extensions/modern-indicators)*
 
