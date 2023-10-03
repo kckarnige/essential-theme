@@ -25,6 +25,8 @@
 }
 
 :root {
+    --home-background: var(--background-primary);
+    
     --indicator-border-size: 2px;
     --indicator-border-style: solid;
     --indicator-rounding: 0;
