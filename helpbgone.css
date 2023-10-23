@@ -1,0 +1,19 @@
+[class*="upperContainer-"] [class*="toolbar-"] [class*="anchor-"][class*="anchorUnderlineOnHover-"][href="https://support.discord.com"] {
+    display: none;
+}
+
+[class*="notice-"] {
+    height: 48px;
+    line-height: 48px;
+}
+[class*="notice-"] [class*="button-"] {
+    top: 12px;
+}
+[class*="notice-"] [class*="closeButton-"] {
+    top: 5px;
+    margin-right: 280px;
+}
+
+[class*="userPopoutOverlayBackground-"] {
+    max-height: 60vh;
+}
