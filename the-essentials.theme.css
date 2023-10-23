@@ -10,6 +10,7 @@
  * @updateUrl https://raw.githack.com/kckarnige/essential-theme/main/essential.theme.css
 */
 @import url("https://raw.githack.com/kckarnige/essential-theme/main/source.css");
+@import url("https://raw.githack.com/kckarnige/essential-theme/main/helpbgone.css");
 
 :root {
     --mod-saturation-factor: 0.7; /* Default is .7 */
