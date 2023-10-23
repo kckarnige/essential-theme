@@ -182,7 +182,9 @@ none {
 
 [class*="userTag-"]:not([class*="nameTag-"]) [class*="userTagUsernameBase-"]:before,
 [class*="info-"][class*="nameTagSmall-"] [class*="discriminator-"]:before,
-[class*="nameTag-"] > [class*="panelSubtextContainer-"] > [class*="subtext-"] > [class*="hoverRoll-"] > [class*="hovered-"]:before {
+[class*="nameTag-"] > [class*="panelSubtextContainer-"] > [class*="subtext-"] > [class*="hoverRoll-"] > [class*="hovered-"]:before,
+[id*="account-switch-account"] [class*="userMenuUsername-"] > [class*="userMenuText-"]:before,
+[class*="username-"] [style="color: var(--header-primary);"]:before {
     content: "@";
 }
 
