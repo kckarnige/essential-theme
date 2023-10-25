@@ -1,19 +1,19 @@
-[class*="upperContainer-"] [class*="toolbar-"] [class*="anchor-"][class*="anchorUnderlineOnHover-"][href="https://support.discord.com"] {
+[class*="upperContainer__"] [class*="toolbar__"] [class*="anchor__"][class*="anchorUnderlineOnHover__"][href="https://support.discord.com"] {
     display: none;
 }
 
-[class*="notice-"] {
+[class*="notice__"] {
     height: 48px;
     line-height: 48px;
 }
-[class*="notice-"] [class*="button-"] {
+[class*="notice__"] [class*="button__"] {
     top: 12px;
 }
-[class*="notice-"] [class*="closeButton-"] {
+[class*="notice__"] [class*="closeButton__"] {
     top: 5px;
     margin-right: 280px;
 }
 
-[class*="userPopoutOverlayBackground-"] {
+[class*="userPopoutOverlayBackground__"] {
     max-height: 60vh;
 }
