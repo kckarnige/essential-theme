@@ -107,22 +107,7 @@
     background-color: hsla(var(--indicator-selected), 0.35) !important;
     color: hsl(var(--indicator-selected-text)) !important;
 }
-[aria-label="Add Super Reaction"],
-#message-actions-add-reaction-1,
-[class*="userPopoutInner_"] > [class*="wrapper_"] > [class*="banner_"],
-#app-mount .info-3pQQBb .line-18uChy:last-child:after {
-    display: none;
-}
 
-button[aria-label="Send a gift"],
-.containerExpanded-3MGTRr,
-.optionBox-1b4n4P:nth-child(2),
-a[href='/store'],
-[class*='tryItOutSection-'],
-[class*='privateChannelsHeaderContainer-'],
-none {
-    display: none !important;
-}
 [armcord-platform="win32"] nav.titlebar div#window-title { /* ArmCord Compatible?! */
     --wordmarkTransform: translateY(-38%);
 }
