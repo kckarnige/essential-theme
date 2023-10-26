@@ -1,14 +1,12 @@
 @import url('https://raw.githack.com/kckarnige/server-scroll/main/base.css');
 @import url("https://raw.githack.com/kckarnige/kckarnige.github.io/main/femboi_owo/discord-font.css");
-@import url('https://martinz64.github.io/remove-nitro/better_sessions.css');
-@import url('https://martinz64.github.io/remove-nitro/remove_boosting.css');
-@import url('https://martinz64.github.io/remove-nitro/remove_profile_colors.css');
-@import url('https://martinz64.github.io/remove-nitro/remove_emoji_upsell.css');
-@import url('https://martinz64.github.io/remove-nitro/remove_avatar_decoration.css');
-@import url('https://martinz64.github.io/remove-nitro/remove_avatar_shop.css');
-@import url('https://martinz64.github.io/remove-nitro/remove_super_reactions.css');
-@import url('https://rawcdn.githack.com/discord-extensions/modern-indicators/1d5a7161467b8382daf8039844258ec0aa53a256/src/source.css');
-@import url("https://dablulite.github.io/css-snippets/BetterModals/import.css");
+@import url('https://kckarnige.github.io/remove-nitro/better_sessions.css');
+@import url('https://kckarnige.github.io/remove-nitro/remove_boosting.css');
+@import url('https://kckarnige.github.io/remove-nitro/remove_profile_colors.css');
+@import url('https://kckarnige.github.io/remove-nitro/remove_emoji_upsell.css');
+@import url('https://kckarnige.github.io/remove-nitro/remove_avatar_decoration.css');
+@import url('https://kckarnige.github.io/remove-nitro/remove_avatar_shop.css');
+@import url('https://kckarnige.github.io/remove-nitro/remove_super_reactions.css');
 
 .theme-light {
     --indicator-unread: 0, calc(var(--mod-saturation-factor, 1) * 0%), 0%;
@@ -46,9 +44,7 @@
     --item-unread-indicator: hsl(var(--indicator-unread), 0.5);
     --item-unread-background: hsl(var(--indicator-unread), 0.025);
     --item-unread-background-hover: hsl(var(--indicator-unread), 0.045);
-}
-  
-.side-1lrxIh {
+
     /* ---- For the settings page -- */
     --indicator-border-info: 2px solid;
 
@@ -61,25 +57,25 @@
     --indicator-unread-border: rgba(var(--indicator-unread), 0.6);
 }
 
-[aria-controls="discord-nitro-tab"] [class*="background-"] {
+[aria-controls="discord-nitro-tab"] [class*="background_"] {
     display: none;
 }
-[aria-selected="false"] div[class*="premiumLabel-"] > svg > path {
+[aria-selected="false"] div[class*="premiumLabel_"] > svg > path {
     fill: var(--brand-500);
 }
 
-[class*="children-"] > [class*="titleWrapper-"] {
+[class*="children_"] > [class*="titleWrapper_"] {
     padding-left: 4px;
 }
 
-[class*="side-"] [class*="item-"] {
+[class*="side_"] [class*="item_"] {
     padding-top: 6px;
     padding-bottom: 6px;
     margin-bottom: 2px;
     border-radius: 0;
 }
 
-[class*="side-"] [class*="item-"]:hover:before {
+[class*="side_"] [class*="item_"]:hover:before {
     content: "";
     position: absolute;
     top: 0;
@@ -88,7 +84,7 @@
     border-left: var(--indicator-border-info) var(--indicator-unread-border);
 }
 
-[class*="side-"] [class*="item-"][class*="selected-"]:before {
+[class*="side_"] [class*="item_"][class*="selected_"]:before {
     content: "";
     position: absolute;
     top: 0;
@@ -97,12 +93,12 @@
     border-left: var(--indicator-border-info) var(--indicator-selected-border) !important;
 }
 
-[class*="side-"] [class*="item-"][class*="selected-"] {
+[class*="side_"] [class*="item_"][class*="selected_"] {
     background: var(--indicator-selected-background) !important;
 }
 
-[aria-controls="discord-nitro-tab"][class*="item-"][class*="selected-"][class*="themed-"],
-[aria-controls="subscriptions-tab"][class*="item-"][class*="selected-"][class*="themed-"] {
+[aria-controls="discord-nitro-tab"][class*="item_"][class*="selected_"][class*="themed_"],
+[aria-controls="subscriptions-tab"][class*="item_"][class*="selected_"][class*="themed_"] {
     background: var(--indicator-selected-border) !important;
     color: var(--interactive-active) !important;
 }
@@ -113,7 +109,7 @@
 }
 [aria-label="Add Super Reaction"],
 #message-actions-add-reaction-1,
-[class*="userPopoutInner-"] > [class*="wrapper-"] > [class*="banner-"],
+[class*="userPopoutInner_"] > [class*="wrapper_"] > [class*="banner_"],
 #app-mount .info-3pQQBb .line-18uChy:last-child:after {
     display: none;
 }
@@ -131,21 +127,21 @@ none {
     --wordmarkTransform: translateY(-38%);
 }
 
-.platform-win [class*="wordmark-"] {
+.platform-win [class*="wordmark_"] {
     --wordmarkTransform: translateY(14%);
 }
 
-.platform-win [class*="titleBar-"] {
+.platform-win [class*="titleBar_"] {
     height: 26px;
 }
 
-.platform-win [class*="winButton-"] {
+.platform-win [class*="winButton_"] {
     position: relative;
     height: 30px;
     width: 45px;
 }
 
-.platform-win [class*="app-"] > [class*="container-"][class*="fixClipping-"] {
+.platform-win [class*="app_"] > [class*="container_"][class*="fixClipping_"] {
     padding-top: 30px;
     top: -30px;
 }
@@ -160,12 +156,12 @@ none {
     width: 135px;
 }
 
-[armcord-platform="win32"] nav.titlebar div#window-title, .platform-win [class*="wordmark-"] svg {
+[armcord-platform="win32"] nav.titlebar div#window-title, .platform-win [class*="wordmark_"] svg {
     width: 0px;
     content: none;
 }
 
-[armcord-platform="win32"] nav.titlebar div#window-title::after, .platform-win [class*="wordmark-"]::after {
+[armcord-platform="win32"] nav.titlebar div#window-title::after, .platform-win [class*="wordmark_"]::after {
     position: absolute;
     font-family: "Discordinated";
     content: var(--wordmark-text);
@@ -180,16 +176,16 @@ none {
     display: block;
 }
 
-[class*="userTag-"]:not([class*="nameTag-"]) [class*="userTagUsernameBase-"]:before,
-[class*="info-"][class*="nameTagSmall-"] [class*="discriminator-"]:before,
-[class*="nameTag-"] > [class*="panelSubtextContainer-"] > [class*="subtext-"] > [class*="hoverRoll-"] > [class*="hovered-"]:before,
-[id*="account-switch-account"] [class*="userMenuUsername-"] > [class*="userMenuText-"]:before,
-[class*="username-"] [style="color: var(--header-primary);"]:before {
+[class*="userTag_"]:not([class*="nameTag_"]) [class*="userTagUsernameBase_"]:before,
+[class*="info_"][class*="nameTagSmall_"] [class*="discriminator_"]:before,
+[class*="nameTag_"] > [class*="panelSubtextContainer_"] > [class*="subtext_"] > [class*="hoverRoll_"] > [class*="hovered_"]:before,
+[id*="account-switch-account"] [class*="userMenuUsername_"] > [class*="userMenuText_"]:before,
+[class*="username_"] [style="color: var(--header-primary);"]:before {
     content: "@";
 }
 
-[class*="userTag-"]:not([class*="nameTag-"]) [class*="userTagUsernameBase-"],
-[class*="info-"][class*="nameTagSmall-"] [class*="discriminator-"] {
+[class*="userTag_"]:not([class*="nameTag_"]) [class*="userTagUsernameBase_"],
+[class*="info_"][class*="nameTagSmall_"] [class*="discriminator_"] {
     color: var(--text-muted);
 }
 
