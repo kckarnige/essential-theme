@@ -1,5 +1,6 @@
 @import url('https://raw.githack.com/kckarnige/server-scroll/main/base.css');
 @import url("https://raw.githack.com/kckarnige/kckarnige.github.io/main/femboi_owo/discord-font.css");
+@import url("https://dablulite.github.io/css-snippets/BetterModals/import.css");
 @import url('https://kckarnige.github.io/remove-nitro/better_sessions.css');
 @import url('https://kckarnige.github.io/remove-nitro/remove_boosting.css');
 @import url('https://kckarnige.github.io/remove-nitro/remove_profile_colors.css');
@@ -57,8 +58,11 @@
     --indicator-unread-border: rgba(var(--indicator-unread), 0.6);
 }
 
-[aria-controls="discord-nitro-tab"] [class*="background_"] {
-    display: none;
+[aria-controls="discord-nitro-tab"] [class*="background_"],
+[href="/store"],
+[href="/shop"],
+[aria-label="Send a gift"] /* Sorry non-native English users */ {
+    display:none
 }
 [aria-selected="false"] div[class*="premiumLabel_"] > svg > path {
     fill: var(--brand-500);
@@ -174,10 +178,6 @@
     color: var(--text-muted);
 }
 
-[href="/store"],
-[href="/shop"] {
-    display:none
-}
 .scrollerContainer_bf5dbd,
 .emptyPage__3e15d {
     background-color: var(--background-primary) !important;
