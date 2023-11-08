@@ -13,6 +13,7 @@
 @import url("https://raw.githack.com/kckarnige/essential-theme/main/helpbgone.css");
 
 :root {
+    --home-icon: var(--default); /* --default, --classic, --mobile */
     --mod-saturation-factor: 0.7; /* Default is .7 */
     --mod-hue-factor: 230; /* Default hue is 230 */
     --wordmark-text-color: #72767d;
