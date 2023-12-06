@@ -60,7 +60,11 @@
     --indicator-unread: 255, 255, 255;
     --indicator-unread-border: rgba(var(--indicator-unread), 0.6);
 }
-
+[data-list-item-id="guildsnav___home"]>[class*="childWrapper_"]>svg {
+    height: 24px;
+    width: 28px;
+    transform: translate(-2px, 2px) !important;
+}
 [data-list-item-id="guildsnav___home"]>[class*="childWrapper_"]>svg>path {
     d: var(--home-icon) !important; /* Custom Discord icon */
 }
