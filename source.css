@@ -3,6 +3,7 @@
 @import url('https://martinz64.github.io/remove-nitro/remove_boosting.css');
 @import url('https://martinz64.github.io/remove-nitro/remove_emoji_upsell.css');
 @import url('https://martinz64.github.io/remove-nitro/remove_avatar_shop.css');
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
 
 .theme-light {
     --indicator-unread: 0, calc(var(--mod-saturation-factor, 1) * 0%), 0%;
