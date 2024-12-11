@@ -173,7 +173,7 @@
     display: block;
 }
 
-[class*="userTag_"]:not([class*="nameTag_"]) [class*="userTagUsernameBase_"]:before,
+[class*="userTag_"]:not([class*="nameTag_"]) [class*="userTagUsername_"]:before,
 [class*="info_"][class*="nameTagSmall_"] [class*="discriminator_"]:before,
 [class*="nameTag_"] > [class*="panelSubtextContainer_"] > [class*="subtext_"] > [class*="hoverRoll_"] > [class*="hovered_"]:before,
 [id*="account-switch-account"] [class*="userMenuUsername_"] > [class*="userMenuText_"]:before,
@@ -181,7 +181,7 @@
     content: "@";
 }
 
-[class*="userTag_"]:not([class*="nameTag_"]) [class*="userTagUsernameBase_"],
+[class*="userTag_"]:not([class*="nameTag_"]) [class*="userTagUsername_"],
 [class*="info_"][class*="nameTagSmall_"] [class*="discriminator_"] {
     color: var(--text-muted);
 }
