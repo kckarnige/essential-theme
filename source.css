@@ -177,7 +177,7 @@
 [class*="info_"][class*="nameTagSmall_"] [class*="discriminator_"]:before,
 [class*="nameTag_"] > [class*="panelSubtextContainer_"] > [class*="subtext_"] > [class*="hoverRoll_"] > [class*="hovered_"]:before,
 [id*="account-switch-account"] [class*="userMenuUsername_"] > [class*="userMenuText_"]:before,
-[class*="username_"] [style="color: var(--header-primary);"]:before {
+[class*="username_"] [style="color: var(--header-primary);"]:not([class*="pronounsText_"]):before {
     content: "@";
 }
 
